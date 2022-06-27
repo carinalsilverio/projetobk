@@ -1,0 +1,62 @@
+const produtos = [
+  {
+    id: 0,
+    nome: 'Combo Whopper',
+    preco: 32.9,
+    image: './src/assets/combo_whopper.png',
+  },
+  {
+    id: 1,
+    nome: 'BK Chicken',
+    preco: 16.9,
+    image: './src/assets/bk_chicken.png',
+  },
+  {
+    id: 2,
+    nome: 'Sorvete',
+    preco: 9.8,
+    image: './src/assets/sorvete.png',
+  },
+  {
+    id: 3,
+    nome: 'Cheddar Duplo',
+    preco: 13.9,
+    image: './src/assets/cheddar_duplo.png',
+  },
+  {
+    id: 4,
+    nome: 'Combo Whopper Rodeio',
+    preco: 38.9,
+    image: './src/assets/whopper_rodeio.png',
+  },
+  {
+    id: 0,
+    nome: 'Combo Whopper',
+    preco: 32.9,
+    image: './src/assets/combo_whopper.png',
+  },
+  {
+    id: 1,
+    nome: 'BK Chicken',
+    preco: 16.9,
+    image: './src/assets/bk_chicken.png',
+  },
+  {
+    id: 2,
+    nome: 'Sorvete',
+    preco: 9.8,
+    image: './src/assets/sorvete.png',
+  },
+  {
+    id: 3,
+    nome: 'Cheddar Duplo',
+    preco: 13.9,
+    image: './src/assets/cheddar_duplo.png',
+  },
+  {
+    id: 4,
+    nome: 'Combo Whopper Rodeio',
+    preco: 38.9,
+    image: './src/assets/whopper_rodeio.png',
+  },
+];
