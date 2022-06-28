@@ -59,7 +59,7 @@ function listarProdutosCarrinho() {
   }
 }
 
-function atualizarTotal() {
+function atualizarTotal(precoClicado) {
   const infoPreco = document.querySelector('.info-preco');
 
   let total = 0;
@@ -67,7 +67,11 @@ function atualizarTotal() {
     const produto = carrinho[i];
     total += produto.preco;
   }
+  if (precoClicado) {
+    total = total - precoClicado;
+  }
   infoPreco.innerText = `Total: R$ ${total.toFixed(2)}`;
+  console.log(infoPreco);
 }
 
 const listaProdutosCarrinho = document.querySelector('.produtos-lista');
@@ -75,13 +79,17 @@ listaProdutosCarrinho.addEventListener('click', removerProdutoCarrinho);
 function removerProdutoCarrinho(event) {
   const botaoExcluir = event.target;
   if (botaoExcluir.tagName == 'BUTTON') {
+    let li = botaoExcluir.closest('li');
+    let precoDoElementoClicado = parseFloat(
+      li.children[1].innerText.replace('R$', '').trim(),
+    );
     botaoExcluir.closest('li').remove();
+    atualizarTotal(precoDoElementoClicado);
   }
 
   const itensCarrinho = carrinho;
   const found = itensCarrinho.find((element) => botaoExcluir);
   itensCarrinho.indexOf('.produtos-lista');
   const remover = itensCarrinho.splice(['']);
-  atualizarTotal(); /*rever - está zerando e não diminuindo valor*/
-  console.log(remover);
+  console.log(carrinho);
 }
