@@ -87,9 +87,11 @@ function removerProdutoCarrinho(event) {
     atualizarTotal(precoDoElementoClicado);
   }
 
-  const itensCarrinho = carrinho;
-  const found = itensCarrinho.find((element) => botaoExcluir);
+  let itensCarrinho = carrinho;
+  let found = itensCarrinho.find((element) => botaoExcluir);
   itensCarrinho.indexOf('.produtos-lista');
-  const remover = itensCarrinho.splice(['']);
+  let remover = itensCarrinho.splice(removerProdutoCarrinho,1);
+  total=0
+  atualizarTotal()
   console.log(carrinho);
 }
