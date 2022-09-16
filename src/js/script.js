@@ -92,6 +92,6 @@ function removerProdutoCarrinho(event) {
   itensCarrinho.indexOf('.produtos-lista');
   let remover = itensCarrinho.splice(removerProdutoCarrinho,1);
   total=0
-  atualizarTotal()
+ atualizarTotal()
   console.log(carrinho);
 }
